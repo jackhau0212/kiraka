@@ -1,0 +1,5 @@
+.dashboardBg {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, var(--gradient-bottom-color), rgba(44, 236, 216, 0.6)); 
+  }
+  

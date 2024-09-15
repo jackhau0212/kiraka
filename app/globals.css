@@ -1,0 +1,768 @@
+/* List of imports for monospaced fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap'); /* Robot Mono */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap'); /* Source Code Pro */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap'); /* Fira Code */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap'); /* Space Mono */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap'); /* JetBrains Mono */
+@import url('https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&display=swap'); /* Cousine*/
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap'); /* Inconsolata */
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap'); /* PT Mono */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap'); /* Ubuntu Mono */
+
+/* List of imports for fonts to use in dashboard analytics */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap'); /* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');  /* Inter */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');  /* Open Sans */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+ 
+html,
+body,
+:root {
+  font-family: 'Inconsolata', monspaced;
+  height: 100%;
+}
+
+* {
+  font-family: inherit;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+ 
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+ 
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+ 
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+ 
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+ 
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+ 
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+ 
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+ 
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+ 
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+ 
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+ 
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+ 
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inconsolata', monospace;
+  }
+}
+
+.keyword-highlighted {
+  color: rgb(200, 0, 0);
+  font-weight: bold;
+}
+
+
+/* Define CSS classes for monospaced fonts */
+.monospace-roboto-mono {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.monospace-source-code-pro {
+  font-family: 'Source Code Pro', monospace;
+}
+
+.monospace-fira-code {
+  font-family: 'Fira Code', monospace;
+}
+
+.monospace-space-mono {
+  font-family: 'Space Mono', monospace;
+}
+
+.monospace-jetbrains-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.monospace-cousine {
+  font-family: 'Cousine', monospace;
+}
+
+.monospace-inconsolata {
+  font-family: 'Inconsolata', monospace;
+}
+
+.monospace-pt-mono {
+  font-family: 'PT Mono', monospace;
+}
+
+.monospace-ubuntu-mono {
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.monospaced {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.monospaced2 {
+  font-family: monospace;
+}
+
+/* End of Defining CSS classes for monospaced fonts */
+
+
+.landing-font {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.analytics-font {
+  font-family: 'Inconsolata', monospace;
+  /* font-weight: bold; */
+}
+
+.quiz-font {
+  font-family: 'Open Sans';
+  /* font-weight: bold; */
+}
+
+.bold {
+  font-weight: bold;
+}
+
+
+.transparent-text{
+  color: transparent;
+  text-shadow: 0 0 0 var(--border);
+}
+
+.fancyButton {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+.fancyButton:hover {
+  background-color: #3a873e;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+.centerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.textAndButtonContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.navbar-dashboard-font {
+  font-size: 15px
+}
+
+.quiz-container {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  padding: 25px;
+  text-align: center;
+  max-width: 30vw;
+  margin: 20px auto;
+}
+
+.quiz-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.quiz-question {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.quiz-options {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.quiz-option {
+  margin-bottom: 10px;
+}
+
+.quiz-next-button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.quiz-next-button:hover {
+  background-color: #45a049;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.quiz-label {
+  margin-left: 15px;
+}
+
+/* Container for navigation buttons */
+.quiz-navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+@keyframes flashGreenBorder {
+  0%, 100% { border-color: rgb(0, 200, 0); }
+  50% { border-color: transparent; } /* 'Off' state */
+}
+.flash-green-border {
+  animation: flashGreenBorder 1s infinite; /* Adjust timing as needed */
+}
+
+
+@keyframes flashOrangeBorder {
+  0%, 100% { border-color: orange; }
+  50% { border-color: transparent; } /* 'Off' state */
+}
+.flash-orange-border {
+  animation: flashOrangeBorder 1.5s infinite; /* Adjust timing as needed */
+}
+
+
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  z-index: 1040;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.modal-content {
+  position: fixed;
+  top: 50%;
+  left: calc(var(--sidebar-width) + (100vw - var(--sidebar-width)) / 2);
+  transform: translate(-50%, -50%);
+  z-index: 1050;
+  /* background: "white"; */
+  background: linear-gradient(to top, rgb(255, 255, 255), rgb(250, 250, 250));
+  /* color: white; */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 40px 4px rgb(85, 85, 85);
+  /* border: 1px solid #ffffff; */
+  outline: none;
+}
+
+.blur-effect {
+  filter: blur(8px);
+}
+
+
+
+.GreenButton {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.GreenButton:hover {
+  background-color: #3a873e;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.BlackButton {
+  background-color: #000000; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.BlackButton:hover {
+  background-color: #3a3939;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.BlueButton {
+  background-color: #3933ea; /* Blue */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.BlueButton:hover {
+  background-color: #1c197af4;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); 
+}
+
+.OrangeButton {
+  background-color: #cb7206; /* Orange */
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.OrangeButton:hover {
+  background-color: #f3931e;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* For sidebar width: */
+:root {
+  --sidebar-width: 15rem; /* Equivalent to w-64 in TailwindCSS (1rem = 4, so 64/4 = 16rem) */
+  --modal-content-width: calc(100vw - var(--sidebar-width)); /* Example calculation for modal width */
+}
+
+
+
+@keyframes blink-animation {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.dot {
+  animation: blink-animation 1.2s infinite both;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+
+.icon-button {
+  color: rgb(90, 90, 90);
+}
+.icon-button:hover {
+  color: rgb(200, 0, 0); /* Bright red color on hover */
+}
+.icon-button.active {
+  color: rgb(200, 0, 0); /* Active state color */
+}
+.icon-button:disabled {
+  /* background-color: #cccccc;
+  color: #666666; */
+  cursor: not-allowed;
+}
+
+
+.home-container {
+  color: #333; /* Dark color for text for better readability */
+  padding: 10px;
+}
+
+.home-container h1 {
+  color: #ffff; /* Gives a theme color to headings */
+}
+
+.home-container p {
+  margin: 20px 10px;
+}
+
+.home-container ul {
+  max-width: 60vw; 
+  margin: auto; /* Centers the list */
+  background-color: white; /* Background for contrast */
+  border-radius: 15px; /* Rounded corners for list */
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); 
+}
+
+.home-container li {
+  text-align: left; /* Aligns text to the left */
+  padding: 12px 10px; /* Adds vertical padding for spacing between items */
+}
+
+
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between; 
+}
+
+.fixed-bottom {
+  position: sticky;
+  bottom: 0;
+}
+
+.scrollable-content {
+  flex: 1;  /* Takes up all available space */
+  overflow-y: auto;  /* Enables vertical scrolling */
+}
+
+
+
+.py-sidebar {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+
+.sidebar-button-bg {
+  transition: background-color 0s;
+  color: var(--almost-white);
+}
+
+.sidebar-button-bg:hover {
+  background-color: rgb(33, 33, 33);
+}
+
+.sidebar-button-selected {
+  background-color: rgb(40, 40, 40);
+}
+
+:root {
+  --off-white: #f8f8f8;  /* Off-white, a bit less bright than pure white */
+  --almost-white: #f0f0f0; /* A shade darker than off-white */
+}
+
+.title-container-sidebar {
+  color: var(--off-white); /* Custom off-white color for text */
+  background: linear-gradient(to top, rgb(30, 30, 30), black);
+  text-align: center;
+  padding: 10px 0; 
+  width: 95%;
+  box-shadow: 0 2px 12px rgba(184, 185, 184, 0.5); /* Subtle white shadow for visibility */
+  font-size: 15px;
+}
+
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  height: 100vh;
+  scrollbar-width: 4px; /* For Firefox */
+  scrollbar-color: #333 #000; /* For Firefox: thumb and track color */
+
+  /* For Chrome, Safari, and Opera */
+  ::-webkit-scrollbar {
+    width: 4px; /* Width of the scrollbar */
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #000; /* Color of the scrollbar track */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: none; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded corners of the scrollbar thumb */
+    border: 2px solid #000; /* Creates a border around the scrollbar thumb */
+  }
+}
+
+.header-container, .footer-container {
+  flex-shrink: 0;
+}
+
+.header-container, .footer-container {
+  flex-shrink: 0;
+}
+
+.content-container {
+  flex-grow: 1;
+  overflow: auto; /* Enables scrolling */
+}
+
+.trash-icon {
+  color: #ccc;  
+  cursor: pointer;
+  transition: color 0s, opacity 0s;
+  opacity: 0; 
+}
+
+.text-button-container:hover .trash-icon {
+  opacity: 1; 
+}
+
+.trash-icon:hover {
+  color: rgb(150, 5, 5);
+  opacity: 1;
+}
+
+
+.trash-dropdown-content {
+  width: 100%;
+  background-color: rgb(20, 20, 20);
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.25);
+  border-radius: 10px;
+  padding: 5px;
+  z-index: 1000; /* Make sure it's above other content */
+  margin-top: 4px; /* Give some space between the text title and the dropdown */
+  position: relative;
+}
+
+.text-button-container.active {
+  box-shadow: 0 0 4px 1px rgb(150, 5, 5);
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.trash-dropdown-content ul {
+  list-style: none; /* Removes bullet points */
+  margin: 0;
+  padding: 0;
+  background-color: rgb(20, 20, 20); 
+}
+
+.trash-dropdown-content li {
+  padding: 8px 12px; /* Add some padding for better touch */
+  cursor: pointer; /* Change cursor to pointer */
+  color: rgb(215, 215, 215); /* Ensure text is visible against white background */
+  position: relative;
+}
+
+.trash-dropdown-content li:hover {
+  background-color: rgb(38, 31, 31); /* Light grey background on hover */
+  border-radius: 10px;
+}
+
+.trash-dropdown-content li:last-child {
+  border-bottom: none; /* No border for the last item */
+}
+
+
+
+@keyframes gradientAnimation {
+  0%, 100% {
+    background-size: 200% 100%;
+  }
+  50% {
+    background-size: 100% 200%;
+  }
+}
+
+.animated-gradient-button {
+  background: linear-gradient(45deg, rgb(0, 125, 0), rgb(0, 250, 105));
+  background-size: 150% 150%;
+  animation: gradientAnimation 2s ease infinite;
+  color: white;
+  font-weight: 450;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 9999px; 
+  cursor: pointer; 
+  transition: transform 0.3s ease;
+}
+
+.animated-gradient-button:hover {
+  transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+
+.SubmitButton {
+  background-color: #04af4e;
+  top: 10px;
+  right: 10px;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 4px 8px 0 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.SubmitButton:hover {
+  background-color: #03843b;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); 
+}
+
+
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  background-color: #3FAED7;
+  border-radius: 20px;
+  padding: 5px;
+  position: relative;
+  width: 200px;
+}
+
+.toggle-switch-input {
+  display: none;
+}
+
+.toggle-switch-label {
+  color: white;
+  flex-grow: 1;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: color 0.2s;
+}
+
+.toggle-switch-slider {
+  background-color: white;
+  border-radius: 18px;
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  left: 3px;
+  right: 50%;
+  transition: all 0.3s ease;
+}
+
+.toggle-switch-slider.static {
+  right: 3px;
+  left: 50%;
+}
+
+.toggle-switch input[type="radio"]:checked + label {
+  color: #00008B;
+}
+
+.flash-mode-display-bg-color {
+  background-color: #FFFAF0;
+}
+
+.bg-color-black {
+  background-color: black;
+}
+
+.flash-mode-display-text-color {
+  color: #FFFAF0;
+}
+
+.text-color-black {
+  color: black;
+}
+
+.highlightable-text-container {
+  font-weight: 100;
+  word-break: break-word;
+  /* hyphens: auto; */
+}
+
+
+
+/* bg + navbar colours */
+:root {
+  --gradient-top-color: rgba(10, 105, 35, 0.85);
+  --gradient-bottom-color: rgba(10, 105, 35, 0.8);
+}
